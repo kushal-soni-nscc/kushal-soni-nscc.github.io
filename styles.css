@@ -1,0 +1,362 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    overflow: visible;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+    position: relative;
+}
+
+.logo {
+    max-height: 60px;
+}
+
+.login-btn {
+    background-color: #373737;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #373737;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.header-nav a:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 610px) {
+    .header-nav {
+        display: none;
+    }
+}
+
+.dropdown-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-10px);
+    width: 180px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.dropdown-nav a {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.dropdown-nav a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-nav a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.skills h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #373737;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Container for Side-by-Side Layout */
+.side-by-side-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.mission-vision h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #373737;
+}
+
+.mission, .vision {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.mission h3, .vision h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #373737;
+}
+
+/* Download Resume Section */
+.download-resume {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.download-resume h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #373737;
+}
+
+.download-resume p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.download-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .side-by-side-container {
+        flex-direction: column;
+    }
+
+    .mission-vision, .download-resume {
+        width: 100%;
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+}
+
+.contact h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #373737;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact label {
+    font-size: 16px;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #888;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.contact button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #373737;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.inline-fields {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.inline-fields input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}

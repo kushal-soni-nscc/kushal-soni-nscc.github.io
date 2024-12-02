@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="custom.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Header Section -->
+        <header id="section0">
+            <div class="header-left">
+                <button class="menu-btn">☰</button>
+                <a href="#" class="logo-link">
+                    <img src="images/logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <a href="#">Home</a>
+                <a href="#section1">Skills</a>
+                <a href="#section2">Mission & Vision</a>
+                <a href="#section3">Contact</a>
+            </nav>
+            <div class="dropdown-nav" id="dropdownNav">
+                <a href="#">Home</a>
+                <a href="#section1">Skills</a>
+                <a href="#section2">Mission & Vision</a>
+                <a href="#section3">Contact</a>
+            </div>            
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="section1">
+            <h1>I am Kushal Soni - Web Developer</h1>
+            <p>Your one-stop destination to explore my work and skills.</p>
+            <a href="#section3" class="cta-btn">Get In Touch</a>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="section2">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Web Development</div>
+                <div class="skill-item">Responsive Design</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">UX/UI Design</div>
+                <div class="skill-item">Database</div>
+            </div>
+        </section>       
+
+        <!-- Mission and Download Container -->
+        <div class="side-by-side-container">
+            <!-- Mission & Vision Section -->
+            <section class="mission-vision" id="section3">
+                <h2>Mission & Vision</h2>
+                <div class="mission">
+                    <h3>Mission</h3>
+                    <p>To create user-friendly, accessible websites that leave a lasting impression.</p>
+                </div>
+                <div class="vision">
+                    <h3>Vision</h3>
+                    <p>To lead in innovation, bringing creative solutions to web design challenges.</p>
+                </div>
+            </section>
+
+            <!-- Download Resume Section -->
+            <section class="download-resume" id="downloadResume">
+                <h2>Resume</h2>
+                <p>Interested in knowing more about my work and experience?</p>
+                <a href="file/kushal_resume.pdf" target="_blank" class="download-btn" download>Download Resume</a>
+            </section>
+        </div>
+
+        <section class="contact" id="section4">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <div class="inline-fields">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder="Enter Message" required></textarea>
+                </div>        
+        
+                <button type="submit">Send</button>
+            </form>            
+        </section>
+        
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
